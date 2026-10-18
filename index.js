@@ -7,7 +7,7 @@ const router = jsonServer.router(path.join(__dirname, 'db.json'));
 const middlewares = jsonServer.defaults();
 
 // Bind to the port provided by the environment or default to 3001
-const port = process.env.PORT || 3001;
+const port = process.env.PORT;
 
 server.use(cors());
 server.use(middlewares);
